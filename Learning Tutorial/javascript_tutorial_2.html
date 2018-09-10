@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!May's second JavaScript Tutorial. Sep 2018>
+
+<html>
+
+<head>
+	<title>
+		JavaScript by May
+	</title>
+
+	<h2>
+		JavaScript: the &ltscript&gt tag
+	</h2>
+	<h4> The following examples are from 'https://www.w3schools.com/js/default.asp'.</h3>
+		
+	<p id="demo"></p>
+		<script> document.getElementById("demo").innerHTML = "This is JavaScript.<br /> Old JavaScript examples may use a type attribute: &ltscript type=text/javascript&gt";</script>
+
+
+	<h2>
+		JavaScript Functions and Events
+	</h2>
+	<p id="demo2"></p>
+		<script> document.getElementById("demo2").innerHTML = "JavaScript function is a block of JavaScript code. <br /> A function can be caleed when an event occurs, such as a user clicks a button.";</script>
+
+
+	<script>
+		function firstFunction() {
+			document.getElementById("demo3").innerHTML = "Paragraph Changed.";
+		}
+	</script>
+</head>
+
+
+<body>
+	<h2> A web page </h2>
+	<p id="demo3"> A Paragraph</p>
+	<button type="button" onclick="firstFunction()">Try the first function!</button>
+
+
+	<p id="demo4"></p>
+		<script> document.getElementById("demo4").innerHTML = "JavaScript files have .js file extension.<br /> To use an external script, put the script file name in the source attribute of a &ltscript&gt tag: &ltscript src:'fristScript.js'&gt&lt/script&gt";</script>
+
+	<p id="demo5"></p>
+	<button type = "button" onclick = "firstScript()">Try the first external Script!</button>
+	<p>(My firstFunction is stored in an external file called "firstScript.js")</p>
+	<script src="/Users/Ada/Desktop/firstScript.js"></script>
+
+
+
+</body>
+
+</html>
